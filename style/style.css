@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
  box-sizing: border-box;   
 }
@@ -140,4 +141,148 @@ body{
     width: 26px;
     height: 26px;
     border-radius: 50%;
+=======
+*{
+ box-sizing: border-box;   
+}
+body{
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 20px ;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    margin-bottom: 30px;
+}
+.menu-button{
+    padding: 0;
+    background-color: #fff;
+    width: 20px;
+    height: 17px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 28px;
+    cursor: pointer;
+}
+.menu-line{
+    display: block;
+    background-color: black;
+    width: 20px;
+    height: 3px;
+   border-radius: 3px;
+  
+}
+.logo{
+    margin-right: 59px;
+}
+.search-group{
+    height: 44px;
+    max-width: 830px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius:22px;
+    /* border: solid 1px #30384C; */
+    background-color:#EBEBEB ;
+    padding-right: 18px;
+}
+.input-search{
+    border: none;
+    border-radius:22px;
+    width: 100%;
+    padding: 12px 23px;
+    background-color: transparent;
+}
+.btn-search{
+    border: none;
+    background-color: transparent;   
+    padding: 0;
+    cursor: pointer;
+}
+.icon-search{
+    fill: #000;    
+}
+.icon-link{
+    opacity:0.24;
+}
+.icon-link:hover{
+    opacity: 0.7
+}
+.icon-link:not(:last-child){
+    margin-right: 50px;
+}
+.icons-menu{
+    
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user{
+    margin-left: 45px;
+}
+.user-avatar{    
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.sidebar{
+    padding-left: 32px;
+}
+
+.nav-menu{
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-left: 0;
+    list-style-type:none;
+}
+.nav-link{
+    text-decoration: none;
+    color: #898989;
+    display: flex; 
+    align-items: center;
+}
+.nav-item{
+    margin-bottom: 28px;
+    color: #898989;
+    /* color: black;
+    opacity: 0.24;    */
+    cursor: pointer;
+   
+}
+.nav-item .icon{    
+    fill: #898989;    
+}
+.nav-link:hover .icon{
+    opacity: 1;    
+    fill: red;   
+}
+.nav-link:hover{       
+   color: red;   
+}
+
+.nav-text{
+    margin-left: 13px;
+}
+.nav-title{
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+.nav-img{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+>>>>>>> f1fddd53b60aa8981930ab81fb23e7974a644f25
 }
