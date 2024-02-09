@@ -1,5 +1,7 @@
 
 *{
+    margin: 0;
+    padding: 0;
  box-sizing: border-box;   
 }
 body{
@@ -8,13 +10,18 @@ body{
     font-weight: 400;
 }
 .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
-    padding-top: 20px ;
-    padding-right: 32px;
-    padding-bottom: 20px;
+    /* padding-top: 20px ; */
+    padding-right: 72px;
+    /* padding-bottom: 20px; */
     padding-left: 32px;
-    margin-bottom: 30px;
+    background-color: #fff;
+    z-index: 99;
 }
 .menu-button{
     padding: 0;
@@ -93,9 +100,22 @@ body{
     height: 40px;
 }
 .sidebar{
+    position: fixed;
+    left: 0;
+    top: 153px;
+    height:  calc(100% - 153px) ;
+    overflow-y: auto;
     padding-left: 32px;
+    width: 13%;
+    background-color: #fff;
 }
+.content{
+   margin-top: 153px;
+    padding-left:  14%;
+    width: 100%;
+    height: 400px;
 
+}
 .nav-menu{
     margin-top: 0;
     margin-bottom: 60px;
@@ -141,5 +161,93 @@ body{
     width: 26px;
     height: 26px;
     border-radius: 50%;
+
+}
+.channel{
+    position: relative;
+    margin-bottom: 50px;
+}
+.channel-title{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    color: #19202c;
+    margin-bottom: 30px;
+}
+.channel-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.channel-text{
+    margin-left: 20px;
+}
+
+.video-card{
+    width: 250px;
+}
+.video-thumb {
+    width: 250px;
+    height: 150px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.thumbnail {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+.video-duration {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 9px;
+    border-radius: 12px;
+    background: rgb(0,0,0, 0.3);
+    font-size: 14px;
+    line-height: 18px;
+   
+}
+.video-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202c;
+    margin-bottom: 4px;
+}
+.video-info {
+    font-size: 13px;
+    line-height: 16px ;
+    color: #c2c2c2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.video-views {
+    margin-right: 5px;
+}
+.video-views::after{
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c2c2c2;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.sliders-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 66px;
+    cursor:  pointer;
+    position: absolute;
+    right: 145px  ;
+    top:15px;
 
 }
